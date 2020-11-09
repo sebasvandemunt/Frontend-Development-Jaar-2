@@ -73,12 +73,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** Ik ga me focussen op responsiveness
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** https://dutch-folklore.fandom.com/wiki/Dutch_Folklore_Wikia
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Afbeelding1.png" width="375px" alt="De home pagina van Dutch Folklore Wikia">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Afbeelding2.png" width="375px" alt="Detail pagina van Kabouters van de Dutch Folklore Wikia">
