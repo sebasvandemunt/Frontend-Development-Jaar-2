@@ -77,8 +77,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/Afbeelding1.png" width="375px" alt="De home pagina van Dutch Folklore Wikia">
+<img src="images/Afbeelding1.png" width="375px" alt="De home pagina van de Efteling">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/Afbeelding2.png" width="375px" alt="Detail pagina van Kabouters van de Dutch Folklore Wikia">
+<img src="images/Afbeelding2.png" width="375px" alt="Pagina over de Winter Efteling">
