@@ -73,7 +73,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** Ik ga me focussen op responsiveness
 
-**Je opdracht:** https://dutch-folklore.fandom.com/wiki/Dutch_Folklore_Wikia
+**Je opdracht:** https://www.efteling.com/nl
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
