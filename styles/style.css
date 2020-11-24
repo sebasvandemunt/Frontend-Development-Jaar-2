@@ -3,6 +3,60 @@
   box-sizing:border-box;  
 }
 
+html {
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(77, 57, 40);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(77, 57, 40);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(77, 57, 40);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(77, 57, 40);
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(77, 57, 40);
+  direction: ltr;
+  display: block;
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
+  height: 812px;
+  line-height: normal;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  min-height: 100%;
+  min-width: 320px;
+  overflow-y: scroll;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-size-adjust: 100%;
+  unicode-bidi: isolate;
+  vertical-align: baseline;
+  width: 375.2px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-locale: "nl";
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
 box-sizing: border-box;
 display: block;
@@ -1357,7 +1411,7 @@ z-index: 1;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-</* TWEEDE DIV ONDER DE NAV */
+/* TWEEDE DIV ONDER DE NAV */
 
 div.display--none.portable-display--block.text--right {
 border-bottom-color: rgb(77, 57, 40);
@@ -1843,6 +1897,35 @@ top: 8px;
 width: 24px;
 will-change: transform;
 }
+
+div.header_menu-icon {
+  animation-delay: 0s;
+  animation-direction: reverse;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: afterToMiddleRev;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  background-color: rgb(77, 57, 40);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 12px;
+  margin-bottom: 0px;
+  margin-left: -12px;
+  margin-right: 0px;
+  margin-top: 0px;
+  position: absolute;
+  top: 8px;
+  width: 24px;
+  will-change: transform;
+  }
 
 @font-face {
   font-family: "Open Sans";

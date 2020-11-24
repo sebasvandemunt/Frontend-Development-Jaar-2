@@ -1,1 +1,1 @@
-// JavaScript Document
+// Javascript Document
