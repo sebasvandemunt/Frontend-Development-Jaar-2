@@ -6,8 +6,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. https://www.youtube.com/watch?v=F-mvXKKoSCU&ab_channel=CodeSpot - Hamburger Menu
+2. https://www.youtube.com/watch?v=tb_EwQOa_ao&ab_channel=CodeInstinct - Banner Image
 3. -...-
 
 
