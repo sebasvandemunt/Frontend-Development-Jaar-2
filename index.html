@@ -4,38 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="all.min.css">
+    <title>Wereld vol Wonderen - Efteling</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
-        <span>MENU</span>
-        <button class="btn_menu" type="button">
-            <div></div>
-        </button>
-        <a href="" class="logo">
-            <img src="../test/Schermafbeelding 2020-11-24 om 20.43.17.png" alt="">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="" class="shop"><img src="../test/Schermafbeelding 2020-11-24 om 20.31.42.png" alt=""></a>
-                </li>
-                <li><a href="" class="search"><img src="../test/Schermafbeelding 2020-11-24 om 20.31.47.png" alt=""></a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="sub_nav">
-            <ul>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li> <a href="#">Het park</a> </li>
+            <li> <a href="#">Alle seizoenen geopend</a> </li>
+            <li> <a href="#">Meer Efteling</a> </li>
+            <li> <a href="#">Prijsinformatie</a> </li>
+            <li> <a href="#">Praktische informatie</a> </li>
+            <li> <a href="#">Onze accommodaties</a> </li>
+            <li> <a href="#">Hotels & vakantieparken</a> </li>
+            <li> <a href="#">Aanbiedingen</a> </li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <p>Efteling</p>
+<script src="scripts/script.js"></script>
 </body>
 
 </html>

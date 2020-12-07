@@ -1,94 +1,97 @@
-* {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "OpenSans" sans-serif;
+  src: url(/Open_Sans/OpenSans-Regular.ttf)
 }
 
-header {
+body {
+  font-family: "OpenSans";
+  background-color: #ede5d5;
+}
+
+
+/* ALLES VOOR HET HAMBURGER MENU */
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
   width: 100%;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  background-color: #FFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
-  position: fixed;
+  background-color: #4D3928;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
-nav {
-  display: flex;
-  width: 100%;
-  height: 100%;
+#bar1 {
+  transform: translateY(-4px);
 }
 
-nav ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#bar2 {
+  opacity: 100%;
 }
 
-.sub_nav {
-  display: flex;
-  width: 0;
-  height: 100vh;
-  background-color: aquamarine;
+#bar3 {
+  transform: translateY(4px);
 }
 
-
-.sub_nav_open {
-  display: none;
-  width: 100%;
-  height: 100vh;
-  background-color: aquamarine;
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
 }
 
-nav ul li a {
+.change #bar2 {
+  opacity: 0%;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.nav li a {
+  color:  #4D3928;
   text-decoration: none;
 }
 
-nav ul li {
+.nav li {
   list-style: none;
+  padding: 0px 20px;
 }
 
-span {
+.nav {
+  padding: 0px;
+  margin: 0px 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+
+.menu-bg, #menu-bar {
+  top: 0;
+  right: 0;
   position: absolute;
-  right: 4em;
 }
 
-a.logo img {
-  position: absolute;
-  top: calc(50% - 1em);
-  left: 0;
-  height: 2em;
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background-color: white;
+  transition: 0.3s ease;
 }
 
-.shop img {
-  width: 10vw;
+#menu-bar {
+  z-index: 2;
 }
 
-.search img {
-  width: 10vw;
+.change-bg {
+  width: 550px;
+  height: 540px;
 }
 
-.btn_menu {
-  position: absolute;
-  right: 2em;
-  z-index: 999;
-  margin: 0 1em;
-  background-color: transparent;
-  border: none;
-}
-
-.btn_menu:after,
-.btn_menu:before,
-.btn_menu div {
-  background-color: #000;
-  border-radius: 2px;
-  content: '';
+.change {
   display: block;
-  height: 3px;
-  width: 2.5em;
-  margin: .5em 0;
-  transition: all .5s cubic-bezier(.215, .610, .355, 1);
-  cursor: pointer;
 }
+/* EINDE VAN AL HET HAMBURGER MENU GEDOE */
+
