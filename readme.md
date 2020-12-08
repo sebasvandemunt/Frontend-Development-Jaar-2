@@ -6,9 +6,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. https://www.youtube.com/watch?v=F-mvXKKoSCU&ab_channel=CodeSpot - Hamburger Menu
-2. https://www.youtube.com/watch?v=tb_EwQOa_ao&ab_channel=CodeInstinct - Banner Image
-3. -...-
+1. https://css-tricks.com/almanac/ - Selectors en Properties die ik niet uit m'n hoofd weet
+2. https://www.youtube.com/watch?v=F-mvXKKoSCU&ab_channel=CodeSpot - Hamburger Menu
+3. https://www.youtube.com/watch?v=tb_EwQOa_ao&ab_channel=CodeInstinct - Banner Images
+4. https://www.youtube.com/watch?v=f4J3uaNNYTE&ab_channel=CodingNepal - Footer
 
 
 

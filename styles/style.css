@@ -5,12 +5,15 @@
 
 * {
   margin: 0;
-  height: 100%;
+  padding: 0;
 }
 
 body {
   font-family: "OpenSans" sans-serif;
   background-color: #ede5d5;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* ALLES VOOR DE HEADER */
@@ -125,7 +128,7 @@ body {
 /* ALLES VOOR DE BANNER IMAGE, TEKST EN KNOP */
 .img-container {
   background-image: url("../images/WinterEftelingZweefmolen.jpg");
-  height: 70%;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,7 +177,7 @@ a {
 /* Alles voor de corona update box */
 .Coronavirus {
   display: block;
-  position: absolute;
+  position: relative;
   justify-content: center;
   background-color: #e0f0ff;
   border: 3px solid #a1d1ff;
@@ -209,51 +212,53 @@ a {
 /* DE EERSTE 3 CONTENT BLOKKEN */
 .contentblokken1 {
   display: flex;
+  flex-direction: row;
   position: relative;
+  width: 100%;
+  height: 100%;
   margin: 5px;
 }
 
-.contentblok1 {
-  display: block;
-  position: absolute;
-  height: flex;
-  margin: 5px;
+.contentblok1, .contentblok2, .contentblok3 {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ede5d5;
+  margin: 10px;
+  padding: 10px;
   background-color: white;
   width: 33%;
   height: auto;
 }
 
-.contentblok1afbeelding {
-  background-image: url("../images/ReserveerJeBezoek.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  position: relative;
-  height: 50%;
-  width: 50%;
+.contentblok1afbeelding, .contentblok2afbeelding, .contentblok3afbeelding {
+  width: 100%;
+  height: auto;
 }
 
-.contentblok1 h2 {
-  display: inline-block;
-  position: relative;
+.contentblok1 h2, .contentblok2 h2, .contentblok3 h2 {
+  margin: 10px;
+  color: #b71234;
 }
 
-.contentblok1 p {
-  display: inline-block;
-  position: relative;
+.contentblok1 p, .contentblok2 p, .contentblok3 p {
+  margin: 10px;
+  color: black;
 }
 
-.contentblok1 a {
-  display: inline-block;
-  position: relative;
+.contentblok1 a, .contentblok2 a, .contentblok3 a {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ede5d5;
+  padding-bottom: 8px;
+  padding-top: 10px;
+  text-decoration: none;
 }
 
 
 /* ALLES VOOR DE TWEEDE BANNER IMAGE, TEKST EN KNOP */
 .img-container2 {
   background-image: url("../images/KaartEfteling.jpg");
-  height: 70%;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -292,10 +297,82 @@ a {
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
+/* ALLES VOOR DE CONTENT BETREFT DE EFTELING BLOG */
+.BlogBlokken {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+
+.BlogBlok1, .BlogBlok2, .BlogBlok3 {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ede5d5;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  width: 33%;
+  height: auto;
+}
+
+.BlogBlok1Afbeelding, .BlogBlok2Afbeelding, .BlogBlok3Afbeelding {
+  width: 100%;
+  height: auto;
+}
+
+.EftelingBlogSection h1 {
+  display: flex;
+  position: relative;
+  left: 25%;
+  padding-top: 50px;
+  margin: 10px;
+  color: #b71234;
+}
+
+.BlogBlok1 h2, .BlogBlok2 h2, .BlogBlok3 h2 {
+  margin: 10px;
+  color: #b71234;
+  text-transform: uppercase;
+}
+
+.BlogBlok1 h3, .BlogBlok2 h3, .BlogBlok3 h3 {
+  margin: 10px;
+  color: black;
+}
+
+.BlogBlok1 h4, .BlogBlok2 h4, .BlogBlok3 h4 {
+  margin: 10px;
+  color: lightgrey;
+}
+
+.BlogBTN {
+  width: 300px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(183, 18, 52);
+  color: white;
+  border: 1px solid rgb(155, 15, 44);
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  margin: 10px;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 920px) {
     .inner-container{
       margin-top: 100px;
+    }
+    .contentblokken1 {
+      flex-direction: column;
+    }
+    .contentblok1, .contentblok2, .contentblok3 {
+      width: 100%;
     }
 }
 
@@ -305,5 +382,11 @@ a {
   }
   h1 {
     font-size: 5em;
+  }
+  .contentblokken1 {
+    flex-direction: column;
+  }
+  .contentblok1, .contentblok2, .contentblok3 {
+    width: 100%;
   }
 }
