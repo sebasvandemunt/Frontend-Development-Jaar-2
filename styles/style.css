@@ -10,7 +10,7 @@
 
 body {
   font-family: "OpenSans" sans-serif;
-  background-color: #ede5d5;
+  background-color: #fafaf7;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -125,6 +125,10 @@ body {
   display: block;
 }
 
+#menu-bar {
+  border-bottom: 5px solid #ede5d5;
+}
+
 /* ALLES VOOR DE BANNER IMAGE, TEKST EN KNOP */
 .img-container {
   background-image: url("../images/WinterEftelingZweefmolen.jpg");
@@ -186,7 +190,6 @@ a {
   margin: 5px;
   height: auto;
   width: 50%;
-  z-index: 50;
   left: 25%;
 }
 
@@ -216,7 +219,8 @@ a {
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .contentblok1, .contentblok2, .contentblok3 {
@@ -226,7 +230,7 @@ a {
   margin: 10px;
   padding: 10px;
   background-color: white;
-  width: 33%;
+  width: 25%;
   height: auto;
 }
 
@@ -304,7 +308,8 @@ a {
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .BlogBlok1, .BlogBlok2, .BlogBlok3 {
@@ -314,7 +319,7 @@ a {
   margin: 10px;
   padding: 10px;
   background-color: white;
-  width: 33%;
+  width: 25%;
   height: auto;
 }
 
@@ -361,6 +366,37 @@ a {
   text-decoration: none;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   margin: 10px;
+}
+
+/* BEGIN VAN ALLES WAT MET DE FOOTER TE MAKEN HEEFT */
+footer {
+  background-color: white;
+  border-top: 5px solid #ede5d5;
+}
+
+.vragen {
+  display: flex;
+  position: relative;
+  left: 10%;
+  width: 20%;
+  height: auto;
+}
+
+.MainFooterContent {
+  display: flex;
+  position: relative;
+}
+
+.Box1, .Box2, .Box3, .Box4 {
+  width: 20%;
+  height: auto;
+  left: 10%;
+  position: relative;
+}
+
+.Box1 h2, .Box2 h2, .Box3 h2, .Box4 h2 {
+  color: black;
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES */
