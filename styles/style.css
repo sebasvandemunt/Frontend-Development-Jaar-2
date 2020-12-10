@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "OpenSans" sans-serif;
+  font-family: "OpenSans"sans-serif;
   src: url(/Open_Sans/OpenSans-Regular.ttf)
 }
 
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "OpenSans" sans-serif;
+  font-family: "OpenSans"sans-serif;
   background-color: #fafaf7;
   height: 100%;
   width: 100%;
@@ -36,11 +36,14 @@ body {
   height: 50px;
   width: auto;
   left: 0;
+  margin: 10px;
 }
 
-#winkelmandje, #zoekglas {
+#winkelmandje,
+#zoekglas {
   height: 40px;
   width: 40px;
+  margin: 10px;
 }
 
 /* ALLES VOOR HET HAMBURGER MENU */
@@ -86,13 +89,15 @@ body {
 }
 
 .nav li a {
-  color:  #4D3928;
+  color: #4D3928;
   text-decoration: none;
 }
 
 .nav li {
   list-style: none;
   padding: 0px 20px;
+  border-top: 2px solid #ede5d5;
+  border-bottom: 2px solid #ede5d5;
 }
 
 .nav {
@@ -102,23 +107,29 @@ body {
   display: none;
 }
 
-.menu-bg, #menu {
-  top: 0;
+
+#menu {
   position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .menu-bg {
-  top: 0;
+  right: 0;
   z-index: 1;
   width: 0;
-  height: 0;
+  height: 100%;
   background-color: white;
+  border-bottom: 5px solid #ede5d5;
   transition: 0.3s ease;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
 .change-bg {
   width: 100%;
-  height: 100%;
 }
 
 .change {
@@ -131,7 +142,7 @@ body {
 
 /* ALLES VOOR DE BANNER IMAGE, TEKST EN KNOP */
 .img-container {
-  background-image: url("../images/WinterEftelingZweefmolen.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/WinterEftelingZweefmolen.jpg");
   height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,7 +161,7 @@ body {
 }
 
 h1 {
-  font-size: 4em; 
+  font-size: 4em;
 }
 
 a {
@@ -172,7 +183,8 @@ a {
   margin: 10px;
 }
 
-.btn:hover, .btn:active {
+.btn:hover,
+.btn:active {
   background-color: #fff;
   color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
@@ -223,7 +235,9 @@ a {
   margin-right: 10%;
 }
 
-.contentblok1, .contentblok2, .contentblok3 {
+.contentblok1,
+.contentblok2,
+.contentblok3 {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #ede5d5;
@@ -234,40 +248,74 @@ a {
   height: auto;
 }
 
-.contentblok1afbeelding, .contentblok2afbeelding, .contentblok3afbeelding {
+.contentblok1afbeelding,
+.contentblok2afbeelding,
+.contentblok3afbeelding {
   width: 100%;
   height: auto;
 }
 
-.contentblok1 h2, .contentblok2 h2, .contentblok3 h2 {
+.contentblok1 h2,
+.contentblok2 h2,
+.contentblok3 h2 {
   margin: 10px;
   color: #b71234;
 }
 
-.contentblok1 p, .contentblok2 p, .contentblok3 p {
+.contentblok1 p,
+.contentblok2 p,
+.contentblok3 p {
   margin: 10px;
   color: black;
 }
 
-.contentblok1 a, .contentblok2 a, .contentblok3 a {
+/* .contentblok1 a,
+.contentblok2 a,
+.contentblok3 a {
   background-color: white;
   border-radius: 5px;
-  border: 1px solid #ede5d5;
   padding-bottom: 8px;
   padding-top: 10px;
   text-decoration: none;
+} */
+
+.btn3 {
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color:  #b71234;
+  border: 9px double #ede5d5;
+  text-align: center;
+  transition: 0.3s ease-out;
+  bottom: 3px;
+  background-color: white;
+}
+
+.btn3:hover {
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  color:  #b71234;
+  border: 9px double #ede5d5;
+  text-align: center;
+  background-color: #f2f2f2;
+  transition: 0.3s ease-in;
 }
 
 
 /* ALLES VOOR DE TWEEDE BANNER IMAGE, TEKST EN KNOP */
 .img-container2 {
-  background-image: url("../images/KaartEfteling.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/KaartEfteling.jpg");
   height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
   position: relative;
+  filter: brightness(80%);
 }
 
 .inner-container2 {
@@ -286,7 +334,7 @@ a {
   padding: 10px;
   background-color: rgb(183, 18, 52);
   color: white;
-  border: 1px solid rgb(155, 15, 44);
+  border: 1px double rgb(155, 15, 44);
   border-radius: 5px;
   text-align: center;
   outline: none;
@@ -295,13 +343,19 @@ a {
   margin: 10px;
 }
 
-.btn2:hover, .btn2:active {
+.btn2:hover,
+.btn2:active {
   background-color: rgb(155, 15, 44);
   color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 /* ALLES VOOR DE CONTENT BETREFT DE EFTELING BLOG */
+.EftelingBlogSection {
+  display: grid;
+  position: relative;
+}
+
 .BlogBlokken {
   display: flex;
   flex-direction: row;
@@ -312,7 +366,9 @@ a {
   margin-right: 10%;
 }
 
-.BlogBlok1, .BlogBlok2, .BlogBlok3 {
+.BlogBlok1,
+.BlogBlok2,
+.BlogBlok3 {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #ede5d5;
@@ -323,7 +379,9 @@ a {
   height: auto;
 }
 
-.BlogBlok1Afbeelding, .BlogBlok2Afbeelding, .BlogBlok3Afbeelding {
+.BlogBlok1Afbeelding,
+.BlogBlok2Afbeelding,
+.BlogBlok3Afbeelding {
   width: 100%;
   height: auto;
 }
@@ -337,18 +395,24 @@ a {
   color: #b71234;
 }
 
-.BlogBlok1 h2, .BlogBlok2 h2, .BlogBlok3 h2 {
+.BlogBlok1 h2,
+.BlogBlok2 h2,
+.BlogBlok3 h2 {
   margin: 10px;
   color: #b71234;
   text-transform: uppercase;
 }
 
-.BlogBlok1 h3, .BlogBlok2 h3, .BlogBlok3 h3 {
+.BlogBlok1 h3,
+.BlogBlok2 h3,
+.BlogBlok3 h3 {
   margin: 10px;
   color: black;
 }
 
-.BlogBlok1 h4, .BlogBlok2 h4, .BlogBlok3 h4 {
+.BlogBlok1 h4,
+.BlogBlok2 h4,
+.BlogBlok3 h4 {
   margin: 10px;
   color: lightgrey;
 }
@@ -366,6 +430,7 @@ a {
   text-decoration: none;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   margin: 10px;
+  left: 25%;
 }
 
 /* BEGIN VAN ALLES WAT MET DE FOOTER TE MAKEN HEEFT */
@@ -375,7 +440,7 @@ footer {
 }
 
 .vragen {
-  display: flex;
+  display: grid;
   position: relative;
   left: 10%;
   width: 20%;
@@ -383,46 +448,77 @@ footer {
 }
 
 .MainFooterContent {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: repeat(6, 200px);
   position: relative;
+  border-top: 2px solid #ede5d5;
+  border-bottom: 2px solid #ede5d5;
+  margin-top: 10px;
 }
 
-.Box1, .Box2, .Box3, .Box4 {
-  width: 20%;
+.Box1, .FooterNav1,
+.Box2, .FooterNav2,
+.Box3, .FooterNav3,
+.Box4, .FooterNav4 {
+  width: 50%;
   height: auto;
   left: 10%;
   position: relative;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.Box1 h2, .Box2 h2, .Box3 h2, .Box4 h2 {
+.Box1 h2,
+.Box2 h2,
+.Box3 h2,
+.Box4 h2 {
   color: black;
   font-weight: bold;
 }
 
-/* MEDIA QUERIES */
-@media only screen and (max-width: 920px) {
-    .inner-container{
-      margin-top: 100px;
-    }
-    .contentblokken1 {
-      flex-direction: column;
-    }
-    .contentblok1, .contentblok2, .contentblok3 {
-      width: 100%;
-    }
+.BoxContent p {
+  font-style: italic;
 }
 
-@media only screen and (max-width: 540px) {
-  .inner-container{
-    margin-top: 150px;
+.BoxContent li {
+  text-decoration: none;
+  text-align: left;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 920px) {
+  .inner-container {
+    margin-top: 100px;
   }
-  h1 {
-    font-size: 5em;
-  }
+
   .contentblokken1 {
     flex-direction: column;
   }
-  .contentblok1, .contentblok2, .contentblok3 {
+
+  .contentblok1,
+  .contentblok2,
+  .contentblok3 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .inner-container {
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  .contentblokken1 {
+    flex-direction: column;
+  }
+
+  .contentblok1,
+  .contentblok2,
+  .contentblok3 {
     width: 100%;
   }
 }

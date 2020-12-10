@@ -10,6 +10,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. https://www.youtube.com/watch?v=F-mvXKKoSCU&ab_channel=CodeSpot - Hamburger Menu
 3. https://www.youtube.com/watch?v=tb_EwQOa_ao&ab_channel=CodeInstinct - Banner Images
 4. https://www.youtube.com/watch?v=f4J3uaNNYTE&ab_channel=CodingNepal - Footer
+5. https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/ - grids!
 
 
 
