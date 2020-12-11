@@ -33,8 +33,42 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 2 (week 5)
 
 -same as voortgang 1-
+### Stand van zaken
+Er is heel veel gebeurd, en er staat al flink wat content op de website. De code is echter nog heel erg slordig en niet heel semantisch.
+Tot nu toe is alleen de eerste pagina gebouwd, er is nog niks gebeurd aan de tweede pagina. Ik ben veel tutorials aan het volgen en aan het experimenteren.
+Helaas gaat het coderen een stuk langzamer dan ik had gehoopt!
 
+-dit ging goed & dit was lastig-
 
+**Screenshot(s):**
+<img src="images/Afbeelding4.png" width="375px" alt="De home pagina van de Efteling">
+De content staat er en de stijling is half, alles behalve een paar kleine dingen moet nog responsive voor mobile first.
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
+
+Ik heb een (to-do) lijstje gemaakt van alle feedback die ik ga verwerken voordat ik verder ga "bouwen";
+- ID's die niet nodig zijn weghalen
+- Header in HTML opschonen
+- Sowieso de gehele website opschonen voordat ik aan mijn tweede pagina kan beginnen
+- .inner-container kan anders, door absolute schaalt de afbeelding niet. Dit kan opgelost worden met flexbox.
+- absolute wordt eigenlijk voor menu's gebruikt
+- de div's bij de contentblokken moeten articles worden
+- h3 ipv h2 bij de contentblokken
+- De afbeeldingen in de contentblokken moeten samen gestijld worden
+- De buttons moeten ook samen gestijld worden
+- Buttons naar andere pagina's zijn geen buttons, maar links
+- Bij de Efteling blog content moeten de h2, h3, h4's naar p's gaan
+- het font moet ik via Google Fonts toevoegen
+- Ik moet kunnen uitleggen waarom ik * gebruik
+- Ik maak veel gebruik van px, dit moet em worden
+- px bij border-radius is wel oké omdat dit heel specifiek is
+- linear-gradient moet over de hero afbeelding heen in een aparte div
+- .Coronavirus moet een "evergreen" naam krijgen
+- De footer CSS kan véél netter
+- Het gebruik van min-width > max-width
+- Javascript mag niet inline in de HTML, alles hiervoor moet volledig in het Javascript document staan
 
 ## Voortgang 1 (week 3)
 
