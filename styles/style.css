@@ -1,7 +1,8 @@
-@font-face {
-  font-family: "OpenSans"sans-serif;
-  src: url(/Open_Sans/OpenSans-Regular.ttf)
-}
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&family=Roboto+Slab&display=swap');
 
 * {
   margin: 0;
@@ -9,7 +10,7 @@
 }
 
 body {
-  font-family: "OpenSans"sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fafaf7;
   height: 100%;
   width: 100%;
@@ -30,10 +31,11 @@ body {
 #header-afbeeldingen {
   display: inline-block;
   position: relative;
+  left: 15%;
 }
 
 #logo {
-  height: 50px;
+  height: 4em;
   width: auto;
   left: 0;
   margin: 10px;
@@ -41,16 +43,16 @@ body {
 
 #winkelmandje,
 #zoekglas {
-  height: 40px;
-  width: 40px;
-  margin: 10px;
+  height: 2em;
+  width: 2em;
+  margin: 1em;
 }
 
 /* ALLES VOOR HET HAMBURGER MENU */
 #menu {
   width: 35px;
   height: 30px;
-  margin: 20px 20px 20px 20px;
+  margin: 2.2em;
   cursor: pointer;
   right: 0;
 }
@@ -154,19 +156,19 @@ body {
 .inner-container {
   text-align: center;
   position: absolute;
-  width: 100%;
+  width: 50%;
   color: white;
   height: auto;
-  margin-top: 200px;
+  margin-top: 12em;
+  left: 25%;
 }
 
 h1 {
   font-size: 4em;
-}
+  font-family: 'Courgette', cursive;}
 
 a {
-  margin-top: 20px;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .btn {
@@ -180,7 +182,8 @@ a {
   outline: none;
   text-decoration: none;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  margin: 10px;
+  margin-top: 1em;
+  border-radius: 5px;
 }
 
 .btn:hover,
@@ -191,32 +194,33 @@ a {
 }
 
 /* Alles voor de corona update box */
-.Coronavirus {
+.SpecialWarning {
   display: block;
   position: relative;
   justify-content: center;
   background-color: #e0f0ff;
   border: 3px solid #a1d1ff;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+  padding: 1em;
+  margin: 1em;
+  margin-top: 2em;
   height: auto;
   width: 50%;
   left: 25%;
 }
 
-.Coronavirus p:nth-of-type(1) {
+.SpecialWarning p:nth-of-type(1) {
   font-weight: bold;
   text-align: left;
   display: inline-block;
 }
 
-.Coronavirus p:nth-of-type(2) {
+.SpecialWarning p:nth-of-type(2) {
   font-weight: normal;
   display: inline-block;
 }
 
-.Coronavirus p:nth-of-type(3) {
+.SpecialWarning p:nth-of-type(3) {
   font-weight: bold;
   color: #6eb8ff;
   text-decoration: underline;
@@ -248,24 +252,25 @@ a {
   height: auto;
 }
 
-.contentblok1afbeelding,
-.contentblok2afbeelding,
-.contentblok3afbeelding {
-  width: 100%;
-  height: auto;
+.contentblokafbeelding {
+  width: 24em;
+  height: 24em;
+  display: block;
+  position: relative;
 }
 
-.contentblok1 h2,
-.contentblok2 h2,
-.contentblok3 h2 {
-  margin: 10px;
+.contentblok1 h3,
+.contentblok2 h3,
+.contentblok3 h3 {
+  font-family: 'Roboto Slab', serif;
+  margin: 1em;
   color: #b71234;
 }
 
 .contentblok1 p,
 .contentblok2 p,
 .contentblok3 p {
-  margin: 10px;
+  margin: 1em;
   color: black;
 }
 
@@ -395,24 +400,24 @@ a {
   color: #b71234;
 }
 
-.BlogBlok1 h2,
-.BlogBlok2 h2,
-.BlogBlok3 h2 {
+.BlogBlok1 h3,
+.BlogBlok2 h3,
+.BlogBlok3 h3 {
   margin: 10px;
   color: #b71234;
   text-transform: uppercase;
 }
 
-.BlogBlok1 h3,
-.BlogBlok2 h3,
-.BlogBlok3 h3 {
+.BlogBlok1 article,
+.BlogBlok2 article,
+.BlogBlok3 article {
   margin: 10px;
   color: black;
 }
 
-.BlogBlok1 h4,
-.BlogBlok2 h4,
-.BlogBlok3 h4 {
+.BlogBlok1 p,
+.BlogBlok2 p,
+.BlogBlok3 p {
   margin: 10px;
   color: lightgrey;
 }
