@@ -11,6 +11,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 3. https://www.youtube.com/watch?v=tb_EwQOa_ao&ab_channel=CodeInstinct - Banner Images
 4. https://www.youtube.com/watch?v=f4J3uaNNYTE&ab_channel=CodingNepal - Footer
 5. https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/ - grids!
+6. https://medium.com/@zac_heisey/7-alternatives-to-the-div-html-tag-7c888c7b5036 - Div'jes wegwerken
+7. https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/#:~:text=320px%20%E2%80%94%20480px%3A%20Mobile%20devices,%E2%80%94%201200px%3A%20Desktops%2C%20large%20screens - Scherm pixel afmetingen
 
 
 
@@ -27,7 +29,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 3 (week 6)
 
 -same as voortgang 1-
+### Stand van zaken
+In verband met een drukke week is er niet heel veel gebeurd. De code is wat netter en er is wat van de in week 5 gegeven feedback verwerkt, maar nog lang niet alles.
 
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
+Het beste om nu te doen is snel de eerste pagina afkrijgen, de Javascript in 1 documentje zetten en daarna de tweede pagina maken.
+Als er dan verder nog tijd over is, kan ik nog extra dingen toevoegen.
 
 
 ## Voortgang 2 (week 5)

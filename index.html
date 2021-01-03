@@ -10,17 +10,17 @@
 
 <body>
     <!-- Alles voor de Header en het Hamburgermenu -->
-    <header id="menu-bar">
-        <nav id="header-afbeeldingen">
-            <img src="images/efteling-logo.png" id="logo">
-            <img src="images/Winkelmandje.png" id="winkelmandje">
-            <img src="images/Zoekglas.png" id="zoekglas">
+    <header class="menu-bar">
+        <nav class="header-afbeeldingen">
+            <img src="images/efteling-logo.png" class="logo">
+            <img src="images/Winkelmandje.png" class="menu-icon">
+            <img src="images/Zoekglas.png" class="menu-icon">
         </nav>
-        <div id="menu" onclick="onClickMenu()">
+        <button id="menu" onclick="onClickMenu()">
             <div id="bar1" class="bar"></div>
             <div id="bar2" class="bar"></div>
             <div id="bar3" class="bar"></div>
-        </div>
+        </button>
         <nav>
             <ul class="nav" id="nav">
                 <li> <a href="#">Het park</a> </li>
@@ -46,41 +46,39 @@
     </section>
     <!-- Einde van alles voor de Banner Image -->
 
-    <!-- !!!!!!!!!!!!!!!!Hier moet nog reserveren en ticket kopen komen -->
-
     <!-- Begin van het Update Coronavirus blokje -->
     <section class="SpecialWarning">
-        <p>Update Coronavirus</p>
+        <h3>Update Coronavirus</h3>
         <p>De Efteling is weer geopend! Lees alles over de maatregelen die de Efteling treft om jouw bezoek aan de
             Wereld vol Wonderen op een veilige manier te laten verlopen.</p>
-        <p>Bekijk de coronamaatregelen ></p>
+        <a href="#">Bekijk de coronamaatregelen ></a>
     </section>
     <!-- Einde van het Coronavirus blokje -->
 
     <!-- Begin van de eerste 3 content blokken -->
-    <section class="contentblokken1">
+    <section class="main-articles">
 
-        <article class="contentblok1">
-            <div class="contentblokafbeelding">
-                <img src="images/ReserveerJeBezoek.jpg" class="contentblokafbeelding">
+        <article class="main-article">
+            <div class="article-image">
+                <img src="images/ReserveerJeBezoek.jpg" class="article-image">
             </div>
             <h3>Reserveer je bezoek</h3>
             <p>Je hebt een geldig entreebewijs én een online reservering nodig om de Efteling te bezoeken.</p>
             <a class="btn3" href="#"> Reserveren </a>
         </article>
 
-        <article class="contentblok2">
-            <div class="contentblokafbeelding">
-                <img src="images/Attractiepark.jpg" class="contentblokafbeelding">
+        <article class="main-article">
+            <div class="article-image">
+                <img src="images/Attractiepark.jpg" class="article-image">
             </div>
             <h3>Attractiepark</h3>
             <p>Ontdek een Wereld vol Wonderen. Bezoek Nederlands grootste en leukste attractiepark de Efteling.</p>
             <a class="btn3" href="#"> Ontdek de Efteling </a>
         </article>
 
-        <article class="contentblok3">
-            <div class="contentblokafbeelding">
-                <img src="images/CoronaMaatregelen.jpg" class="contentblokafbeelding">
+        <article class="main-article">
+            <div class="article-image">
+                <img src="images/CoronaMaatregelen.jpg" class="article-image">
             </div>
             <h3>Coronamaatregelen</h3>
             <p>Lees alles over de maatregelen die de Efteling treft om jouw bezoek aan de Wereld vol Wonderen op een
@@ -91,55 +89,55 @@
     <!-- Einde van de eerste 3 Content blokken -->
 
     <!-- Begin van de Plattegrond Banner Image -->
-    <section class="img-container2">
-        <div class="inner-container2">
+        <section class="img-container2">
+        <div class="inner-container">
             <h1>Ontdek de wondere wereld van de Efteling</h1>
             <a class="btn2" href="#"> Open de plattegrond </a>
         </div>
     </section>
+
     <!-- Einde van de Plattegrond Banner Image -->
 
     <!-- Begin van het stukje over de Efteling Blog -->
-    <section class="EftelingBlogSection" id="EftelingBlogSection">
-        <h1>Lees meer op de Efteling Blog</h1>
+    <h2> Lees meer op de Efteling Blog </h2>
 
-        <div class="BlogBlokken" id="BlokBloggen">
+    <section class="blog-articles">
 
-            <div class="BlogBlok1" id="BlokBlok1">
-                <div class="BlogBlok1Afbeelding" id="BlogBlok1Afbeelding">
-                    <img src="images/BlogAfb1.jpg" class="BlogBlok1Afbeelding">
-                </div>
-                <h3>Nieuws</h3>
-                <article>Nieuwe bakkerij maakt Max & Moritz plein compleet</article>
-                <p>08 december 2020</p>
+        <a href="#" class="blog-article">
+            <div class="blog-image">
+                <img src="images/BlogAfb1.jpg" class="blog-image">
             </div>
+            <h3>Souvenirs</h3>
+            <article>Shop tijdelijk online Efteling-souvenirs bij 't Pakhuys</article>
+            <p>22 december 2020</p>
+        </a>
 
-            <div class="BlogBlok2" id="BlokBlok2">
-                <div class="BlogBlok2Afbeelding" id="BlogBlok2Afbeelding">
-                    <img src="images/BlogAfb2.jpg" class="BlogBlok2Afbeelding">
-                </div>
-                <h3>Nieuws</h3>
-                <article>Zo zien de vernieuwde kamers in het Efteling Hotel er straks uit</article>
-                <p>02 december 2020</p>
+        <a href="#" class="blog-article">
+            <div class="blog-image">
+                <img src="images/BlogAfb2.jpg" class="blog-image">
             </div>
+            <h3>Tips</h3>
+            <article>Slaap jij over een paar dagen in deze sprookjesachtige omgeving?</article>
+            <p>16 december 2020</p>
+        </a>
 
-            <div class="BlogBlok3" id="BlokBlok3">
-                <div class="BlogBlok3Afbeelding" id="BlogBlok3Afbeelding">
-                    <img src="images/BlogAfb3.jpg" class="BlogBlok3Afbeelding">
-                </div>
-                <h3>Eten en drinken</h3>
-                <article>Winterse zoete en hartige lekkernijen</article>
-                <p>30 november 2020</p>
+        <a href="#" class="blog-article">
+            <div class="blog-image">
+                <img src="images/BlogAfb3.jpg" class="blog-image">
             </div>
-
-        </div>
-
-        <a class="BlogBTN" id="BlogBTN">Bekijk alle blogs ></a>
-
+            <h3>Nieuws</h3>
+            <article>Efteling niet meer open in 2020</article>
+            <p>14 december 2020</p>
+        </a>
     </section>
+
+<a class="btn4">Bekijk alle blogs ></a>
+
     <!-- Einde van alles wat er met de Efteling Blog te maken heeft -->
 
     <!-- Alles wat te maken heeft met de footer -->
+
+<!--
     <footer>
 
         <div class="vragen">
@@ -209,6 +207,7 @@
 
         </div>
     </footer>
+-->
     <!-- Einde van alles wat te maken heeft met de footer -->
 
     <script src="scripts/script.js"></script>
