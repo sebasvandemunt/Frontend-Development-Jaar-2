@@ -31,7 +31,7 @@ body {
 .header-afbeeldingen {
   display: inline-block;
   position: absolute;
-  left: 15%;
+  margin-left: 1em;
 }
 
 .logo {
@@ -140,6 +140,7 @@ body {
 .img-container {
   background-image: url("../images/WinterEftelingZweefmolen.jpg");
   height: 70vh;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -473,6 +474,10 @@ footer {
 
 /*/ Smartphones /*/
 @media only screen and (min-width: 320px) {
+  .img-container {
+    width: 100%;
+  }
+
   .main-articles,
   .blog-articles {
     display: flex;
