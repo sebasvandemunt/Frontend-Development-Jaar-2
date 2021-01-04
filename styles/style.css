@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&family=Roboto+Slab&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ body {
 /* ALLES VOOR DE HEADER */
 .menu-bar {
   display: block;
-  position: fixed;
+  position: relative;
   background-color: white;
   width: 100%;
   height: 6em;
@@ -48,7 +49,7 @@ body {
 }
 
 /* ALLES VOOR HET HAMBURGER MENU */
-#menu {
+.menu {
   width: 3em;
   height: 3em;
   margin: 2.2em;
@@ -56,6 +57,9 @@ body {
   right: 0;
   position: absolute;
   top: 0;
+  text-decoration: none;
+  border: none;
+  background-color: white;
 }
 
 .bar {
@@ -98,7 +102,7 @@ body {
 
 .nav li {
   list-style: none;
-  padding: 0px 20px;
+  padding: 10px 20px;
   border-top: 2px solid #ede5d5;
   border-bottom: 2px solid #ede5d5;
 }
@@ -140,7 +144,7 @@ body {
 .img-container {
   background-image: url("../images/WinterEftelingZweefmolen.jpg");
   height: 70vh;
-  width: 100%;
+  min-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,13 +158,14 @@ body {
   width: 50%;
   color: white;
   height: auto;
-  margin-top: 12em;
   left: 25%;
+  font-size: 0.8em;
 }
 
 h1 {
   font-size: 4em;
-  font-family: 'Courgette', cursive;}
+  font-family: 'Courgette', cursive;
+}
 
 a {
   font-size: 1em;
@@ -191,30 +196,24 @@ a {
 
 /* Alles voor de corona update box */
 .SpecialWarning {
-  display: block;
+  display: inline-block;
   position: relative;
-  justify-content: center;
   background-color: #e0f0ff;
   border: 3px solid #a1d1ff;
   border-radius: 5px;
   padding: 1em;
-  margin: 1em;
   margin-top: 2em;
   height: auto;
-  width: 35em;
-  left: 25%;
-  right: 25%;
+  width: 80%;
 }
 
 .SpecialWarning h3 {
   font-weight: bold;
   text-align: left;
-  display: inline-block;
 }
 
 .SpecialWarning p {
   font-weight: normal;
-  display: inline-block;
 }
 
 .SpecialWarning a {
@@ -222,7 +221,6 @@ a {
   color: #6eb8ff;
   text-decoration: underline;
   cursor: pointer;
-  display: inline-block;
 }
 
 /* DE EERSTE 3 CONTENT BLOKKEN */
@@ -230,22 +228,17 @@ a {
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 100%;
-  height: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 80%;
+  height: auto;
   margin-top: 5em;
 }
 
 .main-article {
-  background-color: white;
   border-radius: 5px;
   border: 1px solid #ede5d5;
   margin: 0.5em;
   padding: 0.5em;
   background-color: white;
-  width: 25%;
-  height: auto;
 }
 
 .article-image {
@@ -267,13 +260,12 @@ a {
 }
 
 .btn3 {
-  padding: 1em 3em 1em;
-  margin: 0em 3em 0em;
-  width: 10em;
-  display: block;
-  position: absolute;
+  padding: 1em;
+  margin: 1em;
+  display: inline-block;
+  position: relative;
   text-decoration: none;
-  color:  #b71234;
+  color: #b71234;
   border: 9px double #ede5d5;
   text-align: center;
   transition: 0.3s ease-out;
@@ -284,7 +276,7 @@ a {
 .btn3:hover {
   display: block;
   text-decoration: none;
-  color:  #b71234;
+  color: #b71234;
   border: 9px double #ede5d5;
   text-align: center;
   background-color: #f2f2f2;
@@ -306,7 +298,7 @@ a {
 
 .btn2 {
   display: inline-block;
-  width: 20em;
+  width: 10em;
   font-weight: bold;
   padding: 1em;
   background-color: rgb(183, 18, 52);
@@ -331,11 +323,8 @@ a {
 h2 {
   color: #b71234;
   font-family: 'Roboto Slab', serif;
-  font-size: 3em;
   margin-top: 2em;
   position: relative;
-  left: 25%;
-  right: 25%;
 }
 
 .blog-articles {
@@ -402,7 +391,6 @@ h2 {
   text-align: center;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   margin: 2em;
-  left: 45%;
 }
 
 .btn4:hover {
@@ -470,13 +458,27 @@ footer {
 
 */
 
+
+/* ALLES WAT BETREFT FONTS */
+h2 {
+  min-width: 30em;
+  max-width: 50em;
+}
+
+h3 {
+  min-width: 25em;
+  max-width: 45em;
+}
+
+p, a {
+  min-width: 20em;
+  max-width: 40em;
+}
+
 /* MEDIA QUERIES */
 
 /*/ Smartphones /*/
 @media only screen and (min-width: 320px) {
-  .img-container {
-    width: 100%;
-  }
 
   .main-articles,
   .blog-articles {
@@ -490,20 +492,21 @@ footer {
   }
 
   .main-article,
-  .blog-article  {
-    width: 41em;
+  .blog-article {
+    width: 100%;
     height: auto;
   }
 
   .article-image,
   .blog-image {
-    width: 41em;
-    height: 41em;
+    width: 100%;
+    height: auto;
   }
 }
 
 /*/ iPads, Tablets /*/
 @media only screen and (min-width: 481px) {
+
   .main-articles,
   .blog-articles {
     display: flex;
@@ -516,21 +519,22 @@ footer {
   }
 
   .main-article,
-  .blog-article  {
+  .blog-article {
     width: 100%;
     height: auto;
   }
 
   .article-image,
   .blog-image {
-    width: 43em;
-    height: 43em;
+    width: 100%;
+    height: auto;
   }
 }
 
 
 /*/ Kleine schermen, laptops /*/
 @media only screen and (min-width: 769px) {
+
   .main-articles,
   .blog-articles {
     display: flex;
@@ -544,7 +548,7 @@ footer {
   }
 
   .main-article,
-  .blog-article  {
+  .blog-article {
     width: 100%;
     height: auto;
   }
@@ -558,6 +562,7 @@ footer {
 
 /*/ Desktops, grote schermen /*/
 @media only screen and (min-width: 1025px) {
+
   .main-articles,
   .blog-articles {
     display: flex;
@@ -571,7 +576,7 @@ footer {
   }
 
   .main-article,
-  .blog-article  {
+  .blog-article {
     width: 100%;
     height: auto;
   }
@@ -585,6 +590,7 @@ footer {
 
 /*/ Gigantische Schermen, TV's /*/
 @media only screen and (min-width: 1201px) {
+
   .main-articles,
   .blog-articles {
     display: flex;
@@ -598,7 +604,7 @@ footer {
   }
 
   .main-article,
-  .blog-article  {
+  .blog-article {
     width: 100%;
     height: auto;
   }
