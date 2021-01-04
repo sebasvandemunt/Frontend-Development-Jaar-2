@@ -176,7 +176,7 @@ a {
 
 .btn {
   display: inline-block;
-  width: 20em;
+  width: auto;
   font-weight: bold;
   padding: 1em;
   color: white;
@@ -203,14 +203,17 @@ a {
   position: relative;
   flex-direction: column;
   overflow: hidden;
+  justify-content: center;
+  align-content: center;
   background-color: #e0f0ff;
   border: 3px solid #a1d1ff;
   border-radius: 5px;
   padding: 1em;
   margin-top: 2em;
-  width: 33vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  width: auto;
   height: auto;
-  left: 33%;
 }
 
 .SpecialWarning h3 {
@@ -417,8 +420,9 @@ h2 {
   border-radius: 5px;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   margin: 2em;
-  width: 200px;
-  left: 40%;
+  margin-left: 33vw;
+  margin-right: 33vw;
+  width: 33vw;
 }
 
 .btn4:hover {
@@ -496,7 +500,6 @@ footer {
     width: 100%;
   }
 
-
   .menu-icon {
     display: none;
   }
@@ -529,20 +532,22 @@ footer {
 
 /*/ iPads, Tablets /*/
 @media only screen and (min-width: 481px) {
+
+  .btn4 {
+    margin-left: 33vw;
+    margin-right: 33vw;
+    width: auto;
+  }
+
+  .SpecialWarning {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   h1 {
     margin-top: 1.5em;
     font-size: 3em;
     width: 100%;
-  }
-
-  .btn4 {
-    width: 200px;
-    left: 30%;
-  }  
-
-  .SpecialWarning {
-    width: 66vw;
-    left: 16.5%;
   }
 
   .menu-icon {
@@ -574,20 +579,21 @@ footer {
 
 /*/ Kleine schermen, laptops /*/
 @media only screen and (min-width: 769px) {
+  .btn4 {
+    margin-left: 40vw;
+    margin-right: 40vw;
+    width: auto;
+  }
+
+  .SpecialWarning {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
   h1 {
     margin-top: 1.5em;
     font-size: 4em;
     width: 100%;
-  }
-
-.btn4 {
-  width: 200px;
-  left: 40%;
-}
-
-  .SpecialWarning {
-    width: 33vw;
-    left: 33%;
   }
 
   .main-articles,
