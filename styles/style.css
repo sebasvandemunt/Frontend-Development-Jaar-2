@@ -529,7 +529,10 @@ footer {
   position: relative;
 }
 
-.attracties, .attracties2, .attracties3, .attracties4 {
+.attracties,
+.attracties2,
+.attracties3,
+.attracties4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -541,9 +544,12 @@ footer {
   justify-content: center;
   align-content: center;
   text-align: center;
-  margin-left: 5vw;
-  margin-right: 5vw;
   transition: transform .2s;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .attractie-tekst h3 {
@@ -596,19 +602,22 @@ footer {
   background-image: url("../images/pirana.jpg");
 }
 
-.attracties4-image:nth-child(1) {
+.attracties4:nth-child(1) {
   background-image: url("../images/Python.jpg");
 }
 
-.attracties4-image:nth-child(2) {
+.attracties4:nth-child(2) {
   background-image: url("../images/CarnavalFestival.png");
 }
 
-.attracties4-image:nth-child(3) {
+.attracties4:nth-child(3) {
   background-image: url("../images/StoomCarrousel.jpg");
 }
 
-.attracties:hover, .attracties2:hover, .attracties3:hover, .attracties4:hover {
+.attracties:hover,
+.attracties2:hover,
+.attracties3:hover,
+.attracties4:hover {
   transform: scale(1.05);
   transition: transform .2s;
 }
@@ -699,15 +708,18 @@ footer {
     height: auto;
   }
 
-.main-attracties {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+  .main-attracties {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
 }
 
-.attracties, .attracties2, .attracties3, .attracties4 {
+.attracties,
+.attracties2,
+.attracties3,
+.attracties4 {
   height: 100vw;
   width: 90vw;
 }
@@ -764,11 +776,19 @@ footer {
     margin-right: 5vw;
   }
 
-  .attracties, .attracties2, .attracties3, .attracties4 {
+  .attracties,
+  .attracties2,
+  .attracties3,
+  .attracties4 {
     height: auto;
     width: 33%;
     margin-left: 1vw;
     margin-right: 1vw;
+  }
+
+  .main-attracties {
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
 }
@@ -784,6 +804,8 @@ footer {
     flex-wrap: nowrap;
     width: auto;
     height: 100%;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 
   .main-article,
@@ -797,6 +819,13 @@ footer {
     width: 25em;
     height: 25em;
   }
+
+
+.main-attracties {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 }
 
 /*/ Gigantische Schermen, TV's /*/
