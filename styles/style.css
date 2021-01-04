@@ -144,7 +144,7 @@ body {
 .img-container {
   background-image: url("../images/WinterEftelingZweefmolen.jpg");
   height: 70vh;
-  min-width: 100%;
+  min-width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,14 +159,15 @@ body {
   text-align: center;
   color: white;
   height: auto;
-  font-size: 0.8em;
   margin-top: 10em;
+  width: 100%;
 }
 
 h1 {
   margin-top: 1.5em;
   font-size: 4em;
   font-family: 'Courgette', cursive;
+  width: 100%;
 }
 
 a {
@@ -198,19 +199,22 @@ a {
 
 /* Alles voor de corona update box */
 .SpecialWarning {
-  display: inline-block;
+  display: flex;
   position: relative;
+  flex-direction: column;
+  overflow: hidden;
   background-color: #e0f0ff;
   border: 3px solid #a1d1ff;
   border-radius: 5px;
   padding: 1em;
   margin-top: 2em;
+  width: 33vw;
   height: auto;
+  left: 33%;
 }
 
 .SpecialWarning h3 {
   font-weight: bold;
-  text-align: left;
 }
 
 .SpecialWarning p {
@@ -330,6 +334,12 @@ a {
 
 /* ALLES VOOR DE CONTENT BETREFT DE EFTELING BLOG */
 h2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
   color: #b71234;
   font-family: 'Roboto Slab', serif;
   margin-top: 2em;
@@ -390,18 +400,23 @@ h2 {
 }
 
 .btn4 {
-  font-family: 'Roboto Slab', serif;
-  display: inline-block;
+  display: flex;
   position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   padding: 1em;
   background-color: rgb(183, 18, 52);
   color: white;
   border: 1px double rgb(155, 15, 44);
   border-radius: 5px;
-  text-align: center;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   margin: 2em;
+  width: 200px;
+  left: 40%;
 }
 
 .btn4:hover {
@@ -486,13 +501,13 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 80%;
+    width: auto;
     height: 100%;
   }
 
   .main-article,
   .blog-article {
-    width: 80%;
+    width: auto;
     height: auto;
   }
 
@@ -505,6 +520,16 @@ footer {
 
 /*/ iPads, Tablets /*/
 @media only screen and (min-width: 481px) {
+  .btn4 {
+    width: 200px;
+    left: 30%;
+  }  
+
+  .SpecialWarning {
+    width: 66vw;
+    left: 16.5%;
+  }
+
   .menu-icon {
     display: inline-block;
   }
@@ -514,13 +539,13 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 80%;
+    width: auto;
     height: 100%;
   }
 
   .main-article,
   .blog-article {
-    width: 80%;
+    width: auto;
     height: auto;
   }
 
@@ -535,19 +560,29 @@ footer {
 /*/ Kleine schermen, laptops /*/
 @media only screen and (min-width: 769px) {
 
+.btn4 {
+  width: 200px;
+  left: 40%;
+}
+
+  .SpecialWarning {
+    width: 33vw;
+    left: 33%;
+  }
+
   .main-articles,
   .blog-articles {
     display: flex;
     flex-direction: row;
     position: relative;
     flex-wrap: nowrap;
-    width: 100%;
+    width: auto;
     height: 100%;
   }
 
   .main-article,
   .blog-article {
-    width: 30%;
+    width: 33%;
     height: auto;
   }
 
@@ -567,13 +602,13 @@ footer {
     flex-direction: row;
     position: relative;
     flex-wrap: nowrap;
-    width: 100%;
+    width: auto;
     height: 100%;
   }
 
   .main-article,
   .blog-article {
-    width: 100%;
+    width: 33%;
     height: auto;
   }
 
@@ -593,13 +628,13 @@ footer {
     flex-direction: row;
     position: relative;
     flex-wrap: nowrap;
-    width: 100%;
+    width: auto;
     height: 100%;
   }
 
   .main-article,
   .blog-article {
-    width: 30%;
+    width: 33%;
     height: auto;
   }
 
