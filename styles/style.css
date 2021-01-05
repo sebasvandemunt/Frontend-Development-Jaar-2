@@ -4,6 +4,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&family=Roboto+Slab&display=swap');
 
+/************************* INHOUDSOPGAVE *****************************************/
+/* 
+  32. STYLING VOOR ALLE PAGINA'S
+    34. Algemeen
+    52. Header
+    82. Hamburger Menu
+    174. Special Warning Box
+
+  208. EERSTE PAGINA: HOME
+    210. Banner Images
+    295. Eerste 3 Content Blokken
+    365. Efteling Blog
+
+  462. TWEEDE PAGINA: ATTRACTIES
+    464. Intro over Attractie Info
+    497. Attracties
+
+  594. MEDIA QUERIES
+    596. Smartphones
+    634. iPads, tablets
+    695. Kleine schermen, laptops
+    764. Desktops, grote schermen
+    799. Gigantische schermen, TV's
+*/
+
+/************************* STYLING VOOR ALLE PAGINA'S *****************************************/
 
 * {
   margin: 0;
@@ -18,7 +44,12 @@ body {
   overflow-x: hidden;
 }
 
-/* ALLES VOOR DE HEADER */
+a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Header */
 .menu-bar {
   display: block;
   position: fixed;
@@ -48,7 +79,7 @@ body {
   margin: 1em;
 }
 
-/* ALLES VOOR HET HAMBURGER MENU */
+/* Hamburger Menu */
 .menu {
   width: 3em;
   height: 3em;
@@ -140,64 +171,7 @@ body {
   border-bottom: 5px solid #ede5d5;
 }
 
-/* ALLES VOOR DE BANNER IMAGE, TEKST EN KNOP */
-.img-container {
-  background-image: url("../images/WinterEftelingZweefmolen.jpg");
-  height: 70vh;
-  min-width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  position: relative;
-}
-
-.inner-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  height: auto;
-  margin-top: 10em;
-  width: 100%;
-}
-
-h1 {
-  margin-top: 1.5em;
-  font-size: 4em;
-  font-family: 'Courgette', cursive;
-  width: 100%;
-}
-
-a {
-  font-size: 1em;
-}
-
-.btn {
-  display: inline-block;
-  width: auto;
-  font-weight: bold;
-  padding: 1em;
-  color: white;
-  border: 4px solid white;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  margin-top: 1em;
-  border-radius: 5px;
-}
-
-.btn:hover,
-.btn:active,
-.btn:hover p {
-  background-color: #fff;
-  color: black;
-  transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-
-/* Alles voor de corona update box */
+/* Special Warning Box */
 .SpecialWarning {
   display: flex;
   position: relative;
@@ -231,7 +205,94 @@ a {
   cursor: pointer;
 }
 
-/* DE EERSTE 3 CONTENT BLOKKEN */
+/****************************** EERSTE PAGINA: HOME ******************************************/
+
+/* Banner Images */
+.img-container {
+  background-image: url("../images/WinterEftelingZweefmolen.jpg");
+  height: 70vh;
+  min-width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+}
+
+.inner-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 1.5em;
+  font-size: 4em;
+  font-family: 'Courgette', cursive;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  padding: 1em;
+  color: white;
+  border: 4px solid white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:hover p {
+  background-color: #fff;
+  color: black;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.img-container2 {
+  background-image: url("../images/KaartEfteling.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  margin-top: 5em;
+}
+
+.btn2 {
+  display: inline-block;
+  font-weight: bold;
+  padding: 1em;
+  background-color: rgb(183, 18, 52);
+  color: white;
+  border: 1px double rgb(155, 15, 44);
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  margin: 2em;
+}
+
+.btn2:hover,
+.btn2:active {
+  background-color: rgb(155, 15, 44);
+  color: #fff;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/* Eerste 3 Content Blokken */
 .main-articles {
   display: flex;
   flex-direction: column;
@@ -301,42 +362,7 @@ a {
   transition: 0.3s ease-in;
 }
 
-
-/* ALLES VOOR DE TWEEDE BANNER IMAGE, TEKST EN KNOP */
-.img-container2 {
-  background-image: url("../images/KaartEfteling.jpg");
-  height: 70vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  position: relative;
-  margin-top: 5em;
-}
-
-.btn2 {
-  display: inline-block;
-  font-weight: bold;
-  padding: 1em;
-  background-color: rgb(183, 18, 52);
-  color: white;
-  border: 1px double rgb(155, 15, 44);
-  border-radius: 5px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  margin: 2em;
-}
-
-.btn2:hover,
-.btn2:active {
-  background-color: rgb(155, 15, 44);
-  color: #fff;
-  transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-
-/* ALLES VOOR DE CONTENT BETREFT DE EFTELING BLOG */
+/* Efteling Blog */
 h2 {
   font-size: 3em;
   display: flex;
@@ -433,65 +459,10 @@ h2 {
   cursor: pointer;
 }
 
-
-/* BEGIN VAN ALLES WAT MET DE FOOTER TE MAKEN HEEFT */
-/*
-footer {
-  background-color: white;
-  border-top: 5px solid #ede5d5;
-  margin-top: 5em;
-}
-
-.vragen {
-  display: grid;
-  position: relative;
-  left: 10%;
-  width: 20%;
-  height: auto;
-}
-
-.MainFooterContent {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-template-rows: repeat(6, 200px);
-  position: relative;
-  border-top: 2px solid #ede5d5;
-  border-bottom: 2px solid #ede5d5;
-  margin-top: 10px;
-}
-
-.Box1, .FooterNav1,
-.Box2, .FooterNav2,
-.Box3, .FooterNav3,
-.Box4, .FooterNav4 {
-  width: 50%;
-  height: auto;
-  left: 10%;
-  position: relative;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-.Box1 h2,
-.Box2 h2,
-.Box3 h2,
-.Box4 h2 {
-  color: black;
-  font-weight: bold;
-}
-
-.BoxContent p {
-  font-style: italic;
-}
-
-.BoxContent li {
-  text-decoration: none;
-  text-align: left;
-}
-
-*/
-
 /************************************ 2E PAGINA: ATTRACTIES ********************************************/
+
+/* Intro over Attractie Info */
+
 .AttractieInfo {
   display: flex;
   position: relative;
@@ -523,6 +494,8 @@ footer {
   margin-right: 20vw;
 }
 
+/* Attracties */
+
 .main-attracties {
   display: flex;
   flex-direction: column;
@@ -545,10 +518,6 @@ footer {
   align-content: center;
   text-align: center;
   transition: transform .2s;
-  text-decoration: none;
-}
-
-a {
   text-decoration: none;
 }
 
@@ -621,7 +590,6 @@ a {
   transform: scale(1.05);
   transition: transform .2s;
 }
-
 
 /************************************ MEDIA QUERIES ****************************************************/
 
@@ -821,10 +789,10 @@ a {
   }
 
 
-.main-attracties {
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
+  .main-attracties {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 
 }
 

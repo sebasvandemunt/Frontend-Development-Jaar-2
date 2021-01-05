@@ -17,12 +17,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Eindgesprek (week 7/8)
+Wat goed ging was gegeven feedback verwerken. Ik heb bij alle feedback momenten, van de voortgangsgesprekken maar ook van medestudenten, meegeschreven en hier een lijst van gemaakt.
+Verder was het leuk om met de Efteling bezig te zijn, want ik houd veel van dat park. Iets anders dat goed ging was Javascript gebruiken.
 
--dit ging goed & dit was lastig-
+Wat minder ging was de responsiveness en positioneren. Hier had ik echt heel erg veel moeite mee en dit heeft echt te lang geduurd om goed te krijgen.
+Als ik dit eerder goed had gekregen had ik meer content aan mijn pagina's kunnen toevoegen, dus hier ben ik wel ontevreden over.
+Wat verder minder ging was het opstarten. Ik heb echt een flink aantal keren overnieuw begonnen omdat ik qua aanpak een soort tunnelvisie had.
+
 
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
+<img src="images/Afbeelding5.png" width="375px" alt="De home pagina van de Efteling">
+
+<img src="images/Afbeelding6.png" width="375px" alt="De attracties pagina van de Efteling">
 
 
 
@@ -31,6 +39,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -same as voortgang 1-
 ### Stand van zaken
 In verband met een drukke week is er niet heel veel gebeurd. De code is wat netter en er is wat van de in week 5 gegeven feedback verwerkt, maar nog lang niet alles.
+Vandaar nu ook geen nieuwe screenshots, aangezien de website er nog hetzelfde uitziet.
 
 ### Verslag van meeting
 
